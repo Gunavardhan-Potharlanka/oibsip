@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    color: rgb(163, 1, 196);
+    letter-spacing: 1px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+main{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    margin-bottom: 10px;
+}
+textarea{
+    resize: none;
+}
+.in{
+    width: 40%;
+    margin-bottom: 20px;
+}
+.in h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.in .fom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.fom > input[type='text'], textarea{
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    border: 1px solid rgb(163, 1, 196);
+    box-shadow: 2px 2px rgb(163, 1, 196);
+    background-color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.fom > input[type='text']::placeholder, textarea::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+#save-button{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(163, 1, 196);
+    box-shadow: 3px 3px rgb(118, 1, 141);
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 8px 0px;
+    background-color: rgb(163, 1, 196);
+}
+#out{
+    width: 55%;
+    box-sizing: border-box;
+    color: white;
+    padding: 0px 15px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(163, 1, 196);
+    box-shadow: 2px 2px rgb(163, 1, 196);
+    max-height: 58vh;
+    overflow-y: auto;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.task, .checked{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px solid #999999;
+    padding: 1% 2%;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+.task button, .checked button{
+    width: 60px;
+    cursor: pointer;
+    height: 20px;
+    box-sizing: border-box;
+    background-color: rgb(163, 1, 196);
+    border: 0;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.task .des, .checked .des{
+    width: 80%;
+    cursor: pointer;
+    user-select: none;
+}
+.task .check{
+    background-image: url('images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.checked .des{
+    text-decoration: line-through;
+}
+.checked .check{
+    background-image: url('images/tick.png');
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <div class="main">
+        <div class="cal">
+            <input type="text" placeholder="0" id="inputs">
+            <button onclick="cler()">Cl</button>
+            <button onclick="delt()">Del</button>
+            <button onclick="dis('%')">%</button>
+            <button onclick="dis('/')">/</button>
+            <button onclick="dis('7')">7</button>
+            <button onclick="dis('8')">8</button>
+            <button onclick="dis('9')">9</button>
+            <button onclick="dis('*')">*</button>
+            <button onclick="dis('4')">4</button>
+            <button onclick="dis('5')">5</button>
+            <button onclick="dis('6')">6</button>
+            <button onclick="dis('-')">-</button>
+            <button onclick="dis('1')">1</button>
+            <button onclick="dis('2')">2</button>
+            <button onclick="dis('3')">3</button>
+            <button onclick="dis('+')">+</button>
+            <button onclick="dis('.')">.</button>
+            <button onclick="dis('0')">0</button>
+            <button onclick="calc()" class="ans">=</button>
+        </div>
+    </div>
+    <script>
+        let output = document.getElementById("inputs");
+        function dis(v){
+            output.value += v;
+        }
+        function calc(){
+            try{
+                output.value = eval(output.value);
+            }
+            catch(err){
+                output.value = "Invalid";
+            }
+        }
+        function cler(){
+            output.value = "";
+        }
+        function delt(){
+            output.value = output.value.slice(0, -1);
+        }
+    </script>
+</body>
+</html>

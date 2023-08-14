@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO : List your plans here</title>
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>TODO List</h1>
+    </header>
+    <main>
+        <div class="in">
+            <div class="fom">
+                <input id="input-box" type="text" placeholder="Write your task here" autocomplete="off" required/>
+                <button onclick="addtask()" id="save-button">Add</button>
+            </div>
+        </div>
+        <h2>Your list</h2>
+        <div id="out">
+        </div>
+    </main>
+    <script src="func.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 218, 176);
+}
+.cal{
+    width: 298px;
+    background-color: antiquewhite;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto auto auto auto;
+    padding: 15px;
+    border-radius: 13px;
+    box-shadow: 3px 3px 6px gray;
+}
+.cal input{
+    width: 285px;
+    height: 85px;
+    grid-column: span 4;
+    text-align: end;
+    font-size: 38px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    margin: 30px 0px;
+    background-color: cornsilk;
+    box-shadow: inset 1px 1px 10px gray;
+    border: 0;
+}
+.cal button{
+    border: 0;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px rgb(175, 175, 175);
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+.ans{
+    width: 130px !important;
+    grid-column: span 2;
+}
